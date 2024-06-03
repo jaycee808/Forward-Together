@@ -8,7 +8,7 @@
         <br><br>
         Based in Ayrshire, 4Ward 2Gether is a non-profit organisation led by passionate volunteers. We design engaging sessions that promote open discussions about anti-discrimination. Our unique programs offer young people the opportunity to travel to Northern Ireland to learn about prejudice and challenge biases.
         <br><br>
-        We extend our gratitude to the South Scotland National Lottery Fund and the various groups that have supported our Diversity Weekends
+        We extend our gratitude to the South Scotland National Lottery Fund and the various groups that have supported our Diversity Weekends.
         </p>
     </div>
 </section>

@@ -15,7 +15,8 @@
     <div class="nav-menu">
         <ul>
             <li <?php if (is_page('about')) echo 'class="current-page"'; ?>><a href="<?php echo site_url('/about'); ?>">About</a></li>
-            <li <?php if (is_page('news')) echo 'class="current-page"'; ?>><a href="<?php echo site_url('/news'); ?>">News & Events</a></li>
+            <li <?php if (is_page('news')) echo 'class="current-page"'; ?>><a href="<?php echo site_url('/news'); ?>">News</a></li>
+            <li <?php if (is_page('team')) echo 'class="current-page"'; ?>><a href="<?php echo site_url('/team'); ?>">The Team</a></li>
             <li <?php if (is_page('contact')) echo 'class="current-page"'; ?>><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
         </ul>
     </div>
