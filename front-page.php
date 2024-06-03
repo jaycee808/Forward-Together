@@ -13,5 +13,12 @@
     </div>
 </section>
 
+<section class="hero-grid">
+    <div class="hero-grid-item">Item 1</div>
+    <div class="hero-grid-item">Item 2</div>
+    <div class="hero-grid-item">Item 3</div>
+    <div class="hero-grid-item">Item 4</div>
+    <div class="hero-grid-item">Item 5</div>
+</section>
 
 <?php get_footer(); ?>
