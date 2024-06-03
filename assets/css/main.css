@@ -43,7 +43,11 @@ a {
 
 .navbar .nav-menu ul li a:hover,
 .navbar .nav-menu ul li a:focus {
-    background-color: blue;
+    background-color: #8FD3FE;
+}
+.navbar img {
+    width: 400px;
+    height: auto;
 }
 
 /* Hero Section */
@@ -179,7 +183,7 @@ p {
     }
 
     .logo {
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
 
     .navbar .nav-menu ul {
@@ -188,5 +192,10 @@ p {
     
     .navbar .nav-menu ul li a {
         font-size: 1rem;
+    }
+
+    .navbar img {
+        width: 300px;
+        height: auto;
     }
 }
