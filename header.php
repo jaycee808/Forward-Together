@@ -7,11 +7,20 @@
 </head>
 <body>
 <nav class="navbar">
+    
+    <!-- logo with image -->
     <div class="logo">
         <a href="<?php echo site_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-big.png" alt="Logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-big.png" alt="Logo">
         </a>
     </div>
+<!-- 
+    <div class="logo">
+        <a href="<?php echo site_url(); ?>">
+            4WARD 2GETHER
+        </a>
+    </div> -->
+
     <div class="nav-menu">
         <ul>
             <li <?php if (is_page('about')) echo 'class="current-page"'; ?>><a href="<?php echo site_url('/about'); ?>">About</a></li>
