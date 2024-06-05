@@ -9,7 +9,7 @@
 <nav class="navbar">
     <div class="logo">
         <a href="<?php echo site_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-blue-orange-arrow.png" alt="Logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-big.png" alt="Logo">
         </a>
     </div>
     <div class="nav-menu">
