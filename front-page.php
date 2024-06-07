@@ -1,17 +1,12 @@
 <?php get_header(); ?>
 
-<section class="hero-banner">
-    <div class="hero-headline">Celebrate Diversity</div>
-</section>
-
 <section class="home-grid-display">
     <div class="hero-text-box">
+    <div class="hero-headline">Celebrate Diversity</div>
         <p>
-        Since our inception in 2014, 4Ward 2Gether has been dedicated to spreading the message of diversity and inclusion, combating prejudice, and fostering community unity.
+        4Ward 2Gether, founded in 2014, promotes diversity and inclusion through engaging sessions and unique programs. 
         <br><br>
-        Based in Ayrshire, 4Ward 2Gether is a non-profit organisation led by passionate volunteers. We design engaging sessions that promote open discussions about anti-discrimination. Our unique programs offer young people the opportunity to travel to Northern Ireland to learn about prejudice and challenge biases.
-        <br><br>
-        We extend our gratitude to the South Scotland National Lottery Fund and the various groups that have supported our Diversity Weekends.
+        Thanks to the South Scotland National Lottery Fund and other supporters, we continue to foster unity and combat prejudice in Ayrshire.
         </p>
     </div>
 
