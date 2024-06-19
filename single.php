@@ -6,13 +6,14 @@ while(have_posts()) {
 
     the_post(); ?>
         <div class="post-container">
-            <h2>
+            <h2 class="post-title">
                 <?php the_title(); ?>
             </h2>
-            <hr>
-            <p>
-                <?php the_content(); ?>
-            </p>
+            <div class="post-text">
+                <p>
+                    <?php the_content(); ?>
+                </p>
+            </div>
         </div>
 
 <?php }
