@@ -60,7 +60,7 @@ a {
     justify-content: center;
     font-family: 'Francois One', 'Poppins', sans-serif;
     font-size: 1.25rem;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 0 0.75rem;
     margin-top: -1rem;
     background: var(--pink);
@@ -221,15 +221,35 @@ a {
     color: var(--dark-blue);
 }
 
+/* Team Page Styles */
+
+.staff-member-listing {
+    padding: 1rem;
+}
+
+.staff-member {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.staff-member-info-wrap {
+    margin-left: 1rem;
+}
+
+.staff-member-listing img {
+    width: 400px;
+    border: 2px solid var(--black);
+    border-radius: 12px;
+}
+
 /* Footer */
 
 .page-footer {
     font-family: 'Francois One', 'Poppins', sans-serif;
     color: var(--white);
-    position: fixed;
     bottom: 0;
-    width: 100dvw;
     text-align: center;
+    margin-top: 2rem;
 }
 
 /* Media Queries */ 
@@ -308,5 +328,25 @@ a {
 
     .post-text, .post-page-container p {
         font-size: 1rem;
+    }
+
+    /* Team Page Styles */
+
+    .staff-member-listing {
+        padding: 0.5rem;
+    }
+
+    .staff-member {
+        display: grid;
+    }
+
+    .staff-member-info-wrap {
+        margin-left: 0.5rem;
+    }
+
+    .staff-member-listing img {
+        width: 280px;
+        border: 2px solid var(--black);
+        border-radius: 12px;
     }
 }
