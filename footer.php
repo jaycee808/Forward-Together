@@ -1,4 +1,5 @@
 <!-- footer -->
+<div class="image-overlay-bottom">
 <footer class="page-footer">
     <div class="footer-content">
         <div class="footer-text">
