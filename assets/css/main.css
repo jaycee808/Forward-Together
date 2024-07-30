@@ -20,17 +20,23 @@
 
 body {
     line-height: 1.6;
-    background: var(--mid-blue);
-    /* background: rgb(62,101,205);
-    background: linear-gradient(90deg, rgba(62,101,205,1) 0%, rgba(49,183,241,1) 52%); */
+    background: linear-gradient(328deg,#193497,#31b6f0,#f82b71,#fed239);
+    background-size: 240% 240%;
+    animation: gradient-animation 36s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
 }
 
-/* .image-overlay {
-    background: url('../images/left-3.png') no-repeat left/contain;
-    background-attachment: fixed;
-    position: absolute;
-    z-index: 5;
-} */
 
 a {
     text-decoration: none;
