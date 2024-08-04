@@ -1,8 +1,28 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <?php wp_head(); ?>
+</head>
+<body>
 
-    <div class="container">
+    <div class="hero-grid">
+        <div class="logo">
+            <div class="name">
+            <a href="<?php echo site_url(); ?>">
+                4WARD 2GETHER
+            </a>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item-1"><a href="#about">About</a></div>
+            <div class="nav-item-2"><a href="#team">Team</a></div>
+            <div class="nav-item-3"><a href="#contact">Contact</a></div>
+        </div>
+
         <section class="hero-text-box">
-            <div class="hero-tagline">Celebrate Diversity</div>
             <p>
                 4WARD2GETHER is a passionate non-profit group based in Ayrshire, Scotland dedicated to promoting diversity and inclusion.
                 <br><br>
@@ -11,6 +31,8 @@
                 Join us in building a more inclusive future!
             </p>
         </section>
+
+        <section class="hero-tagline">Celebrate Diversity</section>
 
         <section class="news-section" id="news">
             <h2>Latest News</h2>
@@ -31,7 +53,7 @@
         </section>
     </div>
 
-    <section id="about" class="section-wrapper">
+        <section id="about" class="section-wrapper">
         <h2>About Us</h2>
         <div class="section-content">
             <p>In 2014, Ian Rennie and Sandy Brown of St Kentigern's Church participated in a visit to Belfast and the Corrymeela Community with the TST (Tackling Sectarianism Together) Team. After their visit, they were inspired to take action within their own communities.</p>
@@ -57,8 +79,29 @@
     <section id="contact" class="section-wrapper">
         <h2>Contact Us</h2>
         <div class="section-content">
-            <div class="search-rooms"><?php echo do_shortcode('[wpforms id="44"]')?></div>
+            <div class="contact-form"><?php echo do_shortcode('[wpforms id="44"]')?></div>
         </div>
     </section>
+	
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                Copyright &copy; 4WARD 2GETHER.
+                <br>
+                Registered Charity No. SC053309
+            </div>
+            <section class="social-icon-display">
+                <div class="social-heading">Follow Us</div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </section>
+        </div>
+    </footer>
 
-<?php get_footer(); ?>
+</body>
+</html>
