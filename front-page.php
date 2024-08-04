@@ -17,9 +17,9 @@
             </div>
         </div>
         <div class="nav-menu">
-            <div class="nav-item-1"><a href="#about">About</a></div>
-            <div class="nav-item-2"><a href="#team">Team</a></div>
-            <div class="nav-item-3"><a href="#contact">Contact</a></div>
+            <div class="nav-item"><a href="#about">About</a></div>
+            <div class="nav-item"><a href="#team">Team</a></div>
+            <div class="nav-item"><a href="#contact">Contact</a></div>
         </div>
 
         <section class="hero-text-box">
@@ -56,9 +56,11 @@
         </section>
     </div>
 
-        <section id="about" class="section-wrapper">
-        <h2>About Us</h2>
-        <div class="section-content">
+        <section id="about">
+            <div class="about-heading">
+                <h2>About Us</h2>
+            </div>
+        <div class="about-content">
             <p>In 2014, Ian Rennie and Sandy Brown of St Kentigern's Church participated in a visit to Belfast and the Corrymeela Community with the TST (Tackling Sectarianism Together) Team. After their visit, they were inspired to take action within their own communities.</p>
             <br>
             <p>In September of that year, John Ithell and John Houston devised a plan. By 2015, they had engaged with local councils and schools, producing their first concert, 'Nil by Mouth,' featuring students from St Joseph's and James Hamilton Academies. By 2017, our events had garnered significant attention and enthusiasm, a level of excitement we continue to uphold.</p>
@@ -69,9 +71,11 @@
         </div>
     </section>
 
-    <section id="team" class="section-wrapper">
-        <h2>The Team</h2>
-        <div class="section-content">
+    <section id="team">
+        <div class="team-heading">
+                <h2>Team</h2>
+        </div>
+        <div class="team-content">
             <p>
                 This is just a few of the many wonderful volunteers working with 4WARD2GETHER. Get to know the faces that drive our message forward and show them some love!
             </p>
