@@ -8,14 +8,13 @@
 </head>
 <body>
 
-    <div class="hero-grid">
-        <div class="logo">
-            <div class="name">
-            <a href="<?php echo site_url(); ?>">
-                4WARD 2GETHER
-            </a>
-            </div>
+    <div class="logo">
+        <div class="name">
+            <a href="<?php echo site_url(); ?>">4WARD 2GETHER</a>
         </div>
+    </div>
+
+    <div class="hero-grid">
         <div class="nav-menu">
             <div class="nav-item"><a href="#about">About</a></div>
             <div class="nav-item"><a href="#team">Team</a></div>
@@ -31,11 +30,6 @@
                 Join us in building a more inclusive future!
             </p>
         </section>
-
-        <section class="hero-tagline">
-                Celebrate Diversity
-        </section>
-
 
         <section class="news-section" id="news">
             <h2>Latest News</h2>
@@ -54,11 +48,16 @@
                 <p>No posts found.</p>
             <?php endif; ?>
         </section>
+
+        <section class="hero-tagline">
+                Celebrate Diversity
+        </section>
+
     </div>
 
         <section id="about">
             <div class="about-heading">
-                <h2>About Us</h2>
+                <h2>About</h2>
             </div>
         <div class="about-content">
             <p>In 2014, Ian Rennie and Sandy Brown of St Kentigern's Church participated in a visit to Belfast and the Corrymeela Community with the TST (Tackling Sectarianism Together) Team. After their visit, they were inspired to take action within their own communities.</p>
