@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Color Pallette */
 
 :root {
-    /* --white: #FFFFF0; */
-    --white: #171717;
+    --white: #FFFFF0;
     --black: #171717;
     --yellow: #FFEF15;
     --light-blue: #00f2fe;
@@ -25,7 +24,7 @@ body {
 
     /* background-image: linear-gradient(to right, #00f2fe 0%, #0504aa 100%); */
 
-    background-image: url("../images/bg-2.png");
+    background-image: url("../images/bg-1.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -48,9 +47,8 @@ a {
     font-size: 8rem;
     font-weight: 600;
     font-family: "Passion One", sans-serif;
-    /* color: var(--white); */
-    color: #FFFFFF;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
+    color: var(--black);
+    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-menu {
@@ -85,7 +83,7 @@ a {
 
 .nav-item a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     font-size: 2rem;
     font-family: "Passion One", sans-serif;
     text-transform: uppercase;
@@ -119,8 +117,8 @@ a {
     text-align: center;
     font-family: "Passion One", sans-serif;
     text-transform: uppercase;
-    color: var(--white);
-    font-size: 2rem;
+    color: var(--black);
+    font-size: 2.5rem;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
     background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
@@ -136,7 +134,7 @@ a {
     font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     padding: 1rem;
-    color: var(--white);
+    color: var(--black);
     background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -151,7 +149,7 @@ a {
     font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     padding: 1rem;
-    color: var(--white);
+    color: var(--black);
     background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -170,7 +168,7 @@ a {
     text-align: center;
     font-family: "Passion One", sans-serif;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--black);
     font-size: 2rem;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
     background: rgba(255, 255, 255, 0.5);
@@ -179,20 +177,6 @@ a {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.hero-button {
-    width: 100%;
-    color: var(--white);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    font-family: "Passion One", sans-serif;
-    font-size: 2rem;
-    padding: 1rem;
 }
 
 /* Page Styles */
@@ -202,7 +186,7 @@ a {
     font-size: 4rem;
     font-weight: 400;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-    color: var(--white);
+    color: var(--black);
     border-radius: 16px;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -227,21 +211,21 @@ a {
 .page-text h2 {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem;
 }
 
 .page-text h3 {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem;
 }
 
 .page-container p {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 1.25rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem;
 }
 
@@ -261,14 +245,14 @@ a {
 .post-page-container h2 {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem 0;
 }
 
 .post-page-container p {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem 0;
 }
 
@@ -288,14 +272,14 @@ a {
 .post-container h2 {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem 0;
 }
 
 .post-container p {
     font-family: "Work Sans","Helvetica Neue", sans-serif;
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black);
     padding: 1rem 0;
 }
 
@@ -324,7 +308,7 @@ a {
 .staff-member-name {
     font-family: "Passion One", sans-serif;
     font-size: 3rem;
-    color: var(--white);
+    color: var(--black);
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -333,7 +317,7 @@ a {
     font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--white);
+    color: var(--black);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 1rem;
     margin: 1rem;
@@ -342,7 +326,7 @@ a {
 .staff-member-bio {
     font-family: "Work Sans", sans-serif;
     font-size: 1.2rem;
-    color: var(--white);
+    color: var(--black);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.6;
     margin-bottom: 0;
@@ -363,31 +347,14 @@ a {
     width: 100%;
 }
 
-.contact-info p {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
-}
-
-.contact-info a {
-    color: var(--yellow);
-    text-transform: underline;
-}
-
 .social-icon-display {
     grid-column: 2/3;
     grid-row: 1/3;
-    color: var(--white);
+    color: var(--yellow);
+    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     padding: 1rem;
     text-align: center;
-}
-
-.social-icon-display h2 {
-    font-family: "Passion One", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .social-icons {
@@ -402,9 +369,10 @@ a {
     margin: 1rem;
     border-radius: 16px;
     padding: 1rem;
-    color: var(--white);
-    font-family: "Work Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
+    color: var(--light-blue);
+    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
+    font-family: "Passion One", "Helvetica Neue", sans-serif;
+    font-size: 2rem;
 }
 
 /* Media Queries for responsive design */
@@ -429,7 +397,7 @@ a {
     }
     
     .nav-menu {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
     }
 
     .nav-menu ul {
@@ -467,13 +435,11 @@ a {
     .page-text h3 {
         font-family: "Work Sans","Helvetica Neue", sans-serif;
         font-size: 1.25rem;
-        color: var(--white);
         padding: 0.5rem;
     }
 
     .page-container p {
         font-size: 1rem;
-        color: var(--white);
         padding: 0.5rem;
     }
 
@@ -487,7 +453,6 @@ a {
 
     .post-page-container h2 {
         font-size: 1.5rem;
-        color: var(--white);
         padding: 1rem 0;
     }
     
@@ -596,13 +561,14 @@ a {
 /* Media Queries for Hero Section */
 
 @media (max-width: 1200px) {
-    .hero-heading, .hero-text, .hero-cta, .hero-tagline {
+    .hero-heading, .hero-text, .hero-cta {
         font-size: 1.2rem;
     }
 
-    .hero-tagline {
-        font-size: 3rem;
+    .hero-heading {
+        font-size: 2rem;
     }
+
 }
 
 @media (max-width: 992px) {
@@ -625,15 +591,6 @@ a {
         grid-column: 1 / 3;
         grid-row: 3;
     }
-
-    .hero-tagline {
-        grid-column: 1 / 3;
-        grid-row: 4;
-    }
-
-    .hero-tagline {
-        font-size: 2.5rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -642,8 +599,8 @@ a {
         text-align: center;
     }
 
-    .hero-heading, .hero-text, .hero-cta, .hero-tagline {
-        margin: 0.5rem 0;
+    .hero-heading, .hero-text, .hero-cta {
+        margin: 0.25rem 0;
         font-size: 1.1rem;
     }
 
@@ -652,18 +609,15 @@ a {
         margin: 0 auto;
         font-size: 1.5rem;
     }
-
-    .hero-tagline {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 576px) {
-    .hero-heading, .hero-text, .hero-cta, .hero-tagline {
+    .hero-text, .hero-cta {
         font-size: 1rem;
     }
 
-    .hero-tagline {
-        font-size: 1.5rem;
+    .hero-heading {
+        font-size: 1.25rem;
+       
     }
 }
