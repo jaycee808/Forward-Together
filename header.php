@@ -13,12 +13,13 @@
                 4WARD 2GETHER
             </a>
         </div>
+
         <div class="nav-menu">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-item <?php if (is_page('about')) echo 'current-page'; ?>"><a href="<?php echo site_url('/about'); ?>">About</a></li>
+                <li class="nav-item <?php if (is_page('news')) echo 'current-page'; ?>"><a href="<?php echo site_url('/news'); ?>">News</a></li>
+                <li class="nav-item <?php if (is_page('team')) echo 'current-page'; ?>"><a href="<?php echo site_url('/team'); ?>">Team</a></li>
+                <li class="nav-item <?php if (is_page('contact')) echo 'current-page'; ?>"><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
             </ul>
         </div>
     </nav>
