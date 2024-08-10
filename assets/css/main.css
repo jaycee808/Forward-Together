@@ -1,33 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Modak&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Color Pallette */
-
-:root {
-    --white: #FFFFF0;
-    --black: #171717;
-    --yellow: #FFEF15;
-    --light-blue: #00f2fe;
-    --pink: #f32099;
-    --blue: #0504AA;
-    --dark-blue: #111C49;
-}
-
-*, html, body {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin: 0 6rem;
+    margin: 0 8rem;
     line-height: 1.6;
-
-    /* background-image: linear-gradient(to right, #00f2fe 0%, #0504aa 100%); */
-
-    background-image: url("../images/bg-1.png");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
 a {
@@ -35,252 +16,194 @@ a {
     text-decoration: none;
 }
 
-/* Header Styles */
-
 .navbar {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .logo {
-    font-size: 8rem;
-    font-weight: 600;
-    font-family: "Passion One", sans-serif;
-    color: var(--black);
-    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
     margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
 }
 
 .nav-menu ul {
     list-style: none;
+    gap: 4rem;
     display: flex;
-    width: 100%;
-    gap: 1rem;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin-right: 1rem;
 }
 
 .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem;
-    text-align: center;
-    transition: background 0.3s ease;
-    flex-basis: 25%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
 }
 
-.nav-item a {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 2rem;
-    font-family: "Passion One", sans-serif;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
+.current-page a {
+    font-weight: bold;
 }
-
-.nav-item:hover {
-    background: rgba(255, 255, 255, 0.4);
-}
-
-.current-page {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-/* Hero Section */
 
 .hero-section {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 5rem;
-    grid-gap: 1rem;
-}
-
-.hero-heading {
-    grid-column: 1 / 4;
-    grid-row: 1 / 4;
-    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: "Passion One", sans-serif;
-    text-transform: uppercase;
-    color: var(--black);
-    font-size: 2.5rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100vh;
 }
 
-.hero-text {
-    grid-column: 4 / 7;
-    grid-row: 1 / 6;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-    color: var(--black);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.hero-cta {
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-    color: var(--black);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.hero-btn {
-    grid-column: 1 / 4;
-    grid-row: 5 / 6;
-    padding: 1rem;
+.hero-container {
     display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.hero-column {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "Passion One", sans-serif;
-    text-transform: uppercase;
-    color: var(--black);
+}
+
+.hero-column-1 {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-column-2 {
+    flex: 2;
+}
+
+.hero-heading h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-subheading h3 {
+    font-family: 'Questrial', sans-serif;
     font-size: 2rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
-/* Page Styles */
+.hero-text p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-cta p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.hero-btn a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Page Title Styles */
 
 .page-title {
-    font-family: "Passion One", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-    color: var(--black);
-    border-radius: 16px;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
     text-transform: uppercase;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
 }
 
-.page-text {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+/* Pages Styles */
+
+.page-container {
+    margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
-.page-text h2 {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
+.page-container h2 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+}
+
+.page-container h3 {
+    font-family: 'Questrial', sans-serif;
     font-size: 2rem;
-    color: var(--black);
-    padding: 1rem;
-}
-
-.page-text h3 {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
-    color: var(--black);
-    padding: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .page-container p {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 1.25rem;
-    color: var(--black);
-    padding: 1rem;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 /* News Section - Posts Styles */
 
 .post-page-container {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
 .post-page-container h2 {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 2rem;
-    color: var(--black);
-    padding: 1rem 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
 }
 
 .post-page-container p {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
-    color: var(--black);
-    padding: 1rem 0;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
-/* Individual Posts */
+/* Individual Post Styles */
 
 .post-container {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
 .post-container h2 {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 2rem;
-    color: var(--black);
-    padding: 1rem 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
 }
 
 .post-container p {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
-    color: var(--black);
-    padding: 1rem 0;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 /* Team Section */
@@ -288,336 +211,467 @@ a {
 .staff-member {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #000;
 }
 
 .staff-member-info-wrap {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin-left: 2rem;
 }
 
 .staff-member-listing img {
-    width: 50%;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .staff-member-name {
-    font-family: "Passion One", sans-serif;
-    font-size: 3rem;
-    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .staff-member-position {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--black);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 1rem;
-    margin: 1rem;
+    color: #333;
 }
 
 .staff-member-bio {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 1.2rem;
-    color: var(--black);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    line-height: 1.6;
-    margin-bottom: 0;
+    line-height: 1.8;
+    color: #555;
 }
 
 /* Contact Section */
 
 .wpforms-container {
-    font-family: "Work Sans","Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .wpforms-field-container {
-    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .wpforms-submit-container {
     width: 100%;
+    text-align: center;
+}
+
+.wpforms-submit-container button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    padding: 1rem 2rem;
+    background: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wpforms-submit-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer Styles */
+
+.page-footer {
+    padding: 2rem 0;
+    border-top: 2px solid #000;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
 }
 
 .social-icon-display {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    color: var(--yellow);
-    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 16px;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.social-heading {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 .social-icons {
-    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
 }
 
-/* Footer */
-
-.page-footer {
-    bottom: 0;
-    text-align: center;
-    margin: 1rem;
-    border-radius: 16px;
-    padding: 1rem;
-    color: var(--light-blue);
-    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.3);
-    font-family: "Passion One", "Helvetica Neue", sans-serif;
-    font-size: 2rem;
+.social-icon {
+    font-size: 1.5rem;
+    color: #000;
+    transition: color 0.3s ease;
 }
 
-/* Media Queries for responsive design */
+.social-icon:hover {
+    color: blue;
+}
 
-@media only screen and (max-width: 600px) {
 
+/* Media Queries for devices with a screen width of 1200px and below */
+@media (max-width: 1200px) {
     body {
-        margin: 0 0.75rem;
-        line-height: 1.4;
+        margin: 0 4rem;
     }
 
-    /* Header Styles */
-
     .navbar {
-        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        font-size: 4rem;
+    }
+
+    .nav-menu ul {
+        gap: 2rem;
+    }
+
+    .hero-heading h2 {
+        font-size: 3rem;
+    }
+
+    .hero-subheading h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p, .hero-cta p {
+        font-size: 1.1rem;
+    }
+
+    .hero-btn a {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.6rem;
+    }
+
+    .page-title {
+        font-size: 3rem;
+    }
+
+    .page-container h2, .post-page-container h2, .post-container h2 {
+        font-size: 2rem;
+    }
+
+    .page-container h3 {
+        font-size: 1.75rem;
+    }
+
+    .page-container p, .post-page-container p, .post-container p {
+        font-size: 1.1rem;
+    }
+
+    .staff-member {
         flex-direction: column;
         align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    .staff-member-info-wrap {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .staff-member-listing img {
+        max-width: 200px;
+    }
+
+    .staff-member-name {
+        font-size: 2rem;
+    }
+
+    .staff-member-position {
+        font-size: 1.3rem;
+    }
+
+    .staff-member-bio {
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries for a devices with a screen width of 992px and below */
+@media (max-width: 992px) {
+    body {
+        margin: 0 2rem;
+    }
+
+    .navbar {
+        margin-bottom: 1.5rem;
+    }
+
+    .logo {
+        font-size: 3.5rem;
+    }
+
+    .nav-menu ul {
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .nav-menu ul {
+        margin-right: 0;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .hero-column-1 {
+        padding-right: 0;
+    }
+
+    .hero-heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subheading h3 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text p, .hero-cta p {
+        font-size: 1rem;
+    }
+
+    .hero-btn a {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.4rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-container, .post-page-container, .post-container {
+        padding: 1.5rem;
+    }
+
+    .page-container h2, .post-page-container h2, .post-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .page-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .page-container p, .post-page-container p, .post-container p {
+        font-size: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-container, .post-page-container, .post-container {
+        padding: 1rem;
+    }
+
+    .page-container h2, .post-page-container h2, .post-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .page-container h3 {
+        font-size: 1.3rem;
+    }
+
+    .page-container p, .post-page-container p, .post-container p {
+        font-size: 0.9rem;
+    }
+
+    .staff-member {
+        padding: 1rem 0;
+    }
+
+    .wpforms-container {
+        padding: 1.5rem;
+    }
+
+    .wpforms-submit-container button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Queries for a devices with a screen width of 576px and below */
+@media (max-width: 768px) {
+    body {
+        margin: 0 1rem;
+    }
+
+    .navbar {
+        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .logo {
         font-size: 3rem;
-    }
-    
-    .nav-menu {
-        margin-bottom: 0.25rem;
-    }
-
-    .nav-menu ul {
-        gap: 0.5rem;
-    }
-
-    .nav-item {
-        border-radius: 8px;
-        padding: 0.5rem;
-    }
-
-    .nav-item a {
-        font-size: 1.25rem;
-    }
-
-    /* Page Styles */
-
-    .page-title {
-        font-size: 2rem;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
-        padding: 0.5rem;
-        border-radius: 8px;
-    }
-    
-    .page-text {
-        border-radius: 8px;
-    }
-
-    .page-text h2 {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-    }
-    
-    .page-text h3 {
-        font-family: "Work Sans","Helvetica Neue", sans-serif;
-        font-size: 1.25rem;
-        padding: 0.5rem;
-    }
-
-    .page-container p {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-
-    /* News Section - Posts Styles */
-
-    .post-page-container {
-        border-radius: 8px;
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .post-page-container h2 {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-    }
-    
-    .post-page-container p {
-        font-size: 1rem;
-        padding: 1rem 0;
-    }
-    
-    /* Individual Posts */
-
-    .post-container {
-        border-radius: 8px;
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .post-container h2 {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-    }
-    
-    .post-container p {
-        font-size: 1rem;
-        padding: 1rem 0;
-    }
-
-    /* Footer Styles */
-    
-    .social-icons {
-        font-size: 2rem;
-    }
-
-    .social-icon-display {
-        grid-column: auto;
-        grid-row: 3/5;
-    }
-
-    .page-footer {
-        font-size: 1rem;
-    }
-}
-
-/* Team Section Media Queries */
-
-@media (max-width: 768px) {
-    .staff-member {
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem;
-        margin: 1rem 0;
-    }
-
-    .staff-member-listing img {
-        width: 75%;
-    }
-
-    .staff-member-info-wrap {
-        margin: 1rem 0;
-    }
-
-    .staff-member-name {
-        font-size: 2.5rem;
-    }
-
-    .staff-member-position {
-        font-size: 1.4rem;
-        margin: 0.5rem;
-    }
-
-    .staff-member-bio {
-        font-size: 1.1rem;
-        margin: 0.5rem 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .staff-member {
-        padding: 1rem;
-        margin: 0.5rem 0;
-    }
-
-    .staff-member-listing img {
-        width: 100%;
-        border-radius: 8px;
-    }
-
-    .staff-member-info-wrap {
-        margin: 1rem 0;
-    }
-
-    .staff-member-name {
-        font-size: 2rem;
-    }
-
-    .staff-member-position {
-        font-size: 1.2rem;
-        margin: 0.5rem;
-    }
-
-    .staff-member-bio {
-        font-size: 1rem;
-        margin: 0.5rem 0;
-    }
-}
-
-/* Media Queries for Hero Section */
-
-@media (max-width: 1200px) {
-    .hero-heading, .hero-text, .hero-cta {
-        font-size: 1.2rem;
-    }
-
-    .hero-heading {
-        font-size: 2rem;
-    }
-
-}
-
-@media (max-width: 992px) {
-    .hero-section {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-
-    .hero-heading {
-        grid-column: 1 / 3;
-        grid-row: 1;
-    }
-
-    .hero-text {
-        grid-column: 1 / 3;
-        grid-row: 2;
-    }
-
-    .hero-cta {
-        grid-column: 1 / 3;
-        grid-row: 3;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-section {
-        display: block;
         text-align: center;
     }
 
-    .hero-heading, .hero-text, .hero-cta {
-        margin: 0.25rem 0;
+    .hero-heading h2 {
+        font-size: 2rem;
+    }
+
+    .hero-subheading h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p, .hero-cta p {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .page-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icon-display {
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    .footer-text {
+        margin-bottom: 1rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .page-container, .post-page-container, .post-container {
+        padding: 0.5rem;
+    }
+
+    .page-container h2, .post-page-container h2, .post-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .page-container h3 {
         font-size: 1.1rem;
     }
 
-    .hero-button {
-        width: 80%;
-        margin: 0 auto;
-        font-size: 1.5rem;
+    .page-container p, .post-page-container p, .post-container p {
+        font-size: 0.8rem;
     }
 }
 
+/* Media Queries for a devices with a screen width of 576px and below */
 @media (max-width: 576px) {
-    .hero-text, .hero-cta {
+    body {
+        margin: 0 0.5rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-subheading h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-text p, .hero-cta p {
+        font-size: 0.8rem;
+    }
+
+    .hero-btn a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .nav-menu ul {
+        gap: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+    }
+
+    .staff-member-name {
+        font-size: 1.5rem;
+    }
+
+    .staff-member-position {
         font-size: 1rem;
     }
 
-    .hero-heading {
-        font-size: 1.25rem;
-       
+    .staff-member-bio {
+        font-size: 0.8rem;
+    }
+
+    .wpforms-container {
+        padding: 0.5rem;
+    }
+
+    .wpforms-submit-container button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries for a devices with a screen width of 360px and below */
+@media (max-width: 360px) {
+    body {
+        margin: 0 0.25rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .hero-heading h2 {
+        font-size: 1.5rem;
     }
 }
