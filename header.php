@@ -10,7 +10,7 @@
     <nav class="navbar">
         <div class="logo">
             <a href="<?php echo site_url(); ?>">
-                4WARD 2GETHER
+                4WARD2GETHER
             </a>
         </div>
 

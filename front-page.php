@@ -2,14 +2,15 @@
 
 <section class="hero-section">
     <div class="hero-container">
-        <!-- First Column: Hero Heading -->
+        
+        <!-- Left Column: Hero Heading -->
         <div class="hero-column hero-column-1">
             <div class="hero-heading">
                 <h2>Fostering Unity Through Education, Arts, and Community Engagement</h2>
             </div>
         </div>
 
-        <!-- Second Column: Other Hero Content -->
+        <!-- Right Column: Other Hero Content -->
         <div class="hero-column hero-column-2">
             <div class="hero-subheading">
                 <h3>Celebrate Diversity, Empower Communities</h3>
