@@ -11,7 +11,6 @@
     --light-blue: #00A2FF;
     --royal-blue: #0504AA;
     --dark-blue: #111C49;
-
 }
 
 * {
@@ -21,7 +20,6 @@
 }
 
 body {
-    margin: 0 6rem;
     line-height: 1.6;
     background: linear-gradient(300deg,#09f1b8, #00a2ff, #ff00d2, #fed90f);
     background-size: 120% 120%;
@@ -45,6 +43,9 @@ a {
     text-decoration: none;
 }
 
+.navbar {
+    margin-bottom: 2rem;
+}
 
 .logo {
     font-family: "Modak", "Work Sans", "Helvetica Neue", sans-serif;
@@ -65,8 +66,8 @@ a {
     text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.current-page a {
-    color: var(--light-blue);
+.hero-section, .page-footer, .page-container, .post-page-container {
+    margin: 0 6rem;
 }
 
 .hero-container {
@@ -133,7 +134,7 @@ a {
     text-transform: uppercase;
     color: var(--black);
     border: 2px solid var(--black);
-    background: var(--yellow);
+    background: var(--pink);
     border-radius: 12px;
     padding: 1rem 2rem;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -149,7 +150,6 @@ a {
 .page-footer {
     padding: 2rem;
     border-radius: 12px;
-    margin: 1.6rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,11 +187,11 @@ a {
 .social-icon {
     font-size: 3rem;
     transition: color 0.3s ease;
-    color: var(--royal-blue);
+    color: var(--yellow);
 }
 
 .social-icon:hover {
-    color: var(--yellow);
+    color: var(--royal-blue);
 }
 
 /* Page Title Styles */
@@ -353,12 +353,16 @@ a {
 
 @media (max-width: 1024px) {
     
-    body {
+    .hero-section, .page-footer, .page-container, .post-container {
         margin: 0 4rem;
     }
 
+    .post-page-container {
+        margin-bottom: 1.6rem;
+    }
+    
     .navbar {
-        margin: 0.5rem 0;
+        margin-bottom: 2rem;
     }
 
     .logo {
@@ -391,16 +395,19 @@ a {
         font-size: 2rem;
     }
 
+    .page-title,
+    .post-page-container h2,
+    .post-container h2,
+    .staff-member-name {
+        font-size: 1.8rem;
+    }
+
     .hero-text p,
     .hero-cta p,
     .hero-btn a,
-    .page-title,
     .page-container h3,
     .page-container h4,
     .page-container p,
-    .post-page-container h2,
-    .post-container h2,
-    .staff-member-name,
     .staff-member-position,
     .wpforms-container,
     .footer-text,
@@ -413,12 +420,16 @@ a {
 
 @media (max-width: 768px) {
 
-    body {
-        margin: 0.5rem;
+    .hero-section, .page-footer, .page-container, .post-page-container, .post-container {
+        margin: 0 2rem;
     }
-
+    
+    .post-page-container {
+        margin-bottom: 1.6rem;
+    }
+    
     .navbar {
-        margin: 0;
+        margin-bottom: 2rem;
     }
 
     .logo {
@@ -430,12 +441,8 @@ a {
         margin: 0.5rem 0;
     }
 
-    .nav-menu ul {
-        gap: 1.5rem;
-    }
-
     .nav-item {
-        font-size: 1.4rem;
+        font-size: 2.2rem;
     }
 
     .hero-container {
@@ -465,7 +472,7 @@ a {
     }
 
     .page-container h3 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .page-container h4,
@@ -523,31 +530,31 @@ a {
 
 @media (max-width: 480px) {
 
-    body {
-        line-height: 1.2;
-        margin: 1rem 0.75rem;
+    .hero-section, .page-footer, .page-container, .post-page-container, .post-container {
+        margin: 0 1rem;
     }
-
+    
+    .post-page-container {
+        margin-bottom: 1.6rem;
+    }
+    
     .navbar {
-        margin-top: 0;
-        padding: 0.25rem 0;
+        margin-bottom: 2rem;
     }
 
     .logo {
-        font-size: 2.6rem;
+        font-size: 3rem;
     }
 
     .nav-menu {
         margin: 0;
+        margin-bottom: 1rem;
     }
 
     .nav-item {
+        font-family: "Work Sans", "Helvetica Neue", sans-serif;
         font-size: 1.2rem;
-    }
-
-    .hero-section {
-        margin: 0;
-        border-radius: 8px;
+        font-weight: 600;
     }
 
     .hero-container {
@@ -563,11 +570,6 @@ a {
         font-size: 1.4rem;
     }
 
-    /* .hero-btn {
-        display: flex;
-        justify-content: center;
-    } */
-
     .page-title, .post-page-container h2, .post-title h2 {
         font-size: 2rem;
     }
@@ -576,18 +578,12 @@ a {
         padding: 1rem;
     }
 
-    .post-page-container, .post-container {
-        padding: 1rem;
-        margin: 1rem 0;
-
-    }
-
     .hero-subheading h3 {
         font-size: 1.4rem;
     }
 
     .page-container h3, .page-container h4 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .hero-text p,
@@ -640,5 +636,13 @@ a {
     .staff-member-bio {
         font-size: 1rem;
         margin: 0.5rem 0;
+    }
+}
+
+/* Extra Small screen sizes */
+
+@media (max-width: 360px) {
+    .logo {
+        font-size: 2.5rem;
     }
 }
