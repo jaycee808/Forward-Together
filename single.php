@@ -15,6 +15,9 @@ while(have_posts()) {
                 </p>
             </div>
         </div>
+        <div class="news-button">
+            <p class="back-button <?php if (is_page('news')) echo 'current-page'; ?>"><a href="<?php echo site_url('/news'); ?>">Back to News</a></p>
+        </div>
 
 <?php }
 

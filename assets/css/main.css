@@ -66,7 +66,7 @@ a {
     text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.hero-section, .page-footer, .page-container, .post-page-container {
+.hero-section, .page-footer, .page-container, .post-page-container, .post-container {
     margin: 0 6rem;
 }
 
@@ -290,6 +290,26 @@ a {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+}
+
+.news-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5rem;
+    margin-top: -4rem;
+}
+
+.back-button {
+    font-family: "Work Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    background: var(--royal-blue);
+    color: var(--white);
+    border-radius: 16px;
+    box-shadow: 6px 5px 7px var(--white);
+    -webkit-box-shadow: 6px 5px 7px -4px var(--dark-blue) ; 
+    border: 1px solid var(--black);
 }
 
 /* Team Section */
@@ -524,6 +544,17 @@ a {
         font-size: 1.1rem;
         margin: 0.5rem 0;
     }
+
+    .news-button {
+        display: flex;
+        justify-content: center;
+        margin-top: -1.8rem;
+    }
+    
+    .back-button {
+        padding: 1rem;
+    }
+    
 }
 
 /* Mobile Devices */
